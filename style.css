@@ -33,3 +33,6 @@
     display: flexbox;
     margin: 20px auto;
   }
+  h1{
+    margin-left: 60px;
+  }

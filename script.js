@@ -1,7 +1,7 @@
 let state = ['', '', '', '', '', '', '', '', ''];
 var current = 'X';
 
-const winningCombinations = [
+var winningCombinations = [
   [0, 1, 2], [3, 4, 5], [6, 7, 8],[0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]  ];
 
 
@@ -35,7 +35,7 @@ function computerTurn() {
     }, []);
 
     let randomStep = Math.floor(Math.random() * emptyBoxes.length);
-    let computerMove = emptyCells[randomStep];
+    let computerMove = emptyBoxes[randomStep];
 
     step(computerMove);
   }
@@ -56,7 +56,7 @@ function winCheck() {
 function reset() {
   state = ['', '', '', '', '', '', '', '', ''];
   current = 'X';
-  let arr = document.getElementsByClassName('cell');
+  let arr = document.getElementsByClassName('col');
   for (let i = 0; i < arr.length; i++) {
     arr[i].innerText = '';
   }
