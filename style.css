@@ -16,16 +16,16 @@
     /* width: 125px; */
   }
   .col {
-    /* font-size: px; */
+    font-size: 40px;
     /* flex-basis: 125px; */
-    /* cursor: pointer; */
+    cursor: pointer;
     border: 1px solid black;
-    /* display: flex; */
+    display: flex;
     width: 33.33%;
     height: 98%;
     /* flex-shrink: 1; */
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center;
+    justify-content: center;
     
   }
   
