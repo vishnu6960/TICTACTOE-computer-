@@ -17,7 +17,8 @@ function step(x) {
       }, 2000);
       // reset();
     } else if (state.indexOf('') === -1) {
-      alert("It's a draw");
+      // alert("It's a draw");
+      document.getElementById("decision").innerText = `It's a draw`
       reset();
     } else {
       current = (current == 'X') ? 'O' : 'X';
