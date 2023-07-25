@@ -19,7 +19,10 @@ function step(x) {
     } else if (state.indexOf('') === -1) {
       // alert("It's a draw");
       document.getElementById("decision").innerText = `It's a draw`
-      reset();
+      setTimeout(() => {
+        reset()
+      }, 2000);
+      // reset();
     } else {
       current = (current == 'X') ? 'O' : 'X';
       if (current == 'O') {
