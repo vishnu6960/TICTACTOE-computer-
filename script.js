@@ -10,8 +10,12 @@ function step(x) {
     state[x] = current;
     document.getElementsByClassName('col')[x].innerText = current;
     if (winCheck()) {
-      alert(`${current} wins`);
-      reset();
+      // alert(`${current} wins`);
+      document.getElementById("decision").innerText = `${current} wins`
+      setTimeout(() => {
+        reset()
+      }, 2000);
+      // reset();
     } else if (state.indexOf('') === -1) {
       alert("It's a draw");
       reset();

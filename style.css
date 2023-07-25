@@ -30,8 +30,9 @@
   }
   
   button {
-    display: flexbox;
-    margin: 20px auto;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 100px;
   }
   h1{
     margin-left: 60px;
