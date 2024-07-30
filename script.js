@@ -10,7 +10,7 @@ function step(x) {
     state[x] = current;
     document.getElementsByClassName('col')[x].innerText = current;
     if (winCheck()) {
-      // alert(`${current} wins`);
+      // alert(`${current} wins`)
       document.getElementById("decision").innerText = `${current} wins`
       setTimeout(() => {
         reset()
@@ -62,6 +62,7 @@ function winCheck() {
 
 
 function reset() {
+  document.getElementById("decision").innerText = ""
   state = ['', '', '', '', '', '', '', '', ''];
   current = 'X';
   let arr = document.getElementsByClassName('col');
